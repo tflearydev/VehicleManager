@@ -1,27 +1,27 @@
 {
-  "name": "vehiclemanager",
+  "name": "vehicleManager",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Prompt",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tflearydev/VehicleManager.git"
+    "url": "https://github.com/tflearydev/VehicleManager#readme"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tflearydev/VehicleManager/issues"
-  },
-  "homepage": "https://github.com/tflearydev/VehicleManager#readme",
   "dependencies": {
     "dotenv": "^6.2.0",
     "express": "^4.16.4",
-    "hbs": "^4.0.2",
+    "hbs": "^4.0.3",
     "method-override": "^3.0.0",
     "mongoose": "^5.4.16",
-    "morgan": "^1.9.1"
-  }
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.10"
+  },
+  "devDependencies": {}
 }
+

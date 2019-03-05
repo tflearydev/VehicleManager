@@ -1,34 +1,21 @@
-// Require modules
-const express = require('express')
-const app = express()
-// const logger = require('morgan')
-const methodOverride = require('method-override')
-const routes = require('./routes/index.js')
+const express = require('express');
+const app = express();
+const methodOverride = require('method-override');
+const routes = require('./routes/index.js');
+// const hbs = require("hbs");
 
-// Register middleware
-// BodyParser
-app.use(express.urlencoded({ extended: true }))
-app.use(express.json())
+app.use(express.urlencoded({extended: true}));
+app.use(express.json());
+app.use(methodOverride('_method'));
 
-// logger
-// app.use(logger('dev'))
+app.use(express.static(__dirname + '/public'));
 
-// method override
-app.use(methodOverride('_method'))
+app.set('view engine', 'hbs');
 
-// Set view engine
-app.set('view engine', 'hbs')
+app.use('/', routes);
 
-// Set public path
-app.use(express.static(__dirname + '/public'))
-
-// Set up route middleware
-app.use('/', routes)
-
-
-// Set up to listen to PORT 3001
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
-    console.log(`Server is listening on port ${PORT}`)
+    console.log(`App is listening on PORT ${PORT}`);
 })

@@ -7,18 +7,18 @@ const vehicleController = require('../controllers/vehicleController.js')
 router.get('/', userController.index)
 router.get('/new', userController.new)
 router.post('/', userController.create)
-router.get('/:shopId', userController.show)
-router.get('/:shopId/edit', userController.edit)
-router.put('/:shopId', userController.update)
-router.delete('/:shopId', userController.delete)
+router.get('/:userId', userController.show)
+router.get('/:userId/edit', userController.edit)
+router.put('/:userId', userController.update)
+router.delete('/:userId', userController.delete)
 
-// Vehicle routes
-router.get('/:shopId/food/:foodId', vehicleController.show)
-router.get('/:shopId/food/new', vehicleController.new)
-router.post('/:shopId/food', vehicleController.create)
-router.get('/:shopId/food/:foodId/edit', vehicleController.edit)
-router.put('/:shopId/food/:foodId', vehicleController.update)
-router.delete('/:shopId/food/:foodId', vehicleController.delete)
+// // Vehicle routes
+// router.get('/:userId/vehicle/:vehicleId', vehicleController.show)
+// router.get('/:userId/vehicle/new', vehicleController.new)
+// router.post('/:userId/vehicle', vehicleController.create)
+// router.get('/:userId/vehicle/:vehicleId/edit', vehicleController.edit)
+// router.put('/:userId/vehicle/:vehicleId', vehicleController.update)
+// router.delete('/:userId/vehicle/:vehicleId', vehicleController.delete)
 
 //
 
