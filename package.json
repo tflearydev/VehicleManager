@@ -17,8 +17,11 @@
   },
   "homepage": "https://github.com/tflearydev/VehicleManager#readme",
   "dependencies": {
+    "dotenv": "^6.2.0",
     "express": "^4.16.4",
-    "hbs": "^4.0.3",
-    "mongoose": "^5.4.17"
+    "hbs": "^4.0.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.4.16",
+    "morgan": "^1.9.1"
   }
 }
