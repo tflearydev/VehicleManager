@@ -1,25 +1,26 @@
+// const shopController = require
 const express = require('express')
 const router = express.Router()
-const userController = require('../controllers/userController.js')
-const vehicleController = require('../controllers/vehicleController.js')
+const customerController = require('../controllers/customerController.js')
+// const vehicleController = require('../controllers/vehicleController.js')
 
-// User routes
-router.get('/', userController.index)
-router.get('/new', userController.new)
-router.post('/', userController.create)
-router.get('/:userId', userController.show)
-router.get('/:userId/edit', userController.edit)
-router.put('/:userId', userController.update)
-router.delete('/:userId', userController.delete)
+// Shop routes
+router.get('/', customerController.index)
+router.get('/new', customerController.new)
+router.post('/', customerController.create)
+router.get('/:shopId', customerController.show)
+router.get('/:shopId/edit', customerController.edit)
+router.put('/:shopId', customerController.update)
+router.delete('/:shopId', customerController.delete)
 
-// // Vehicle routes
-// router.get('/:userId/vehicle/:vehicleId', vehicleController.show)
-// router.get('/:userId/vehicle/new', vehicleController.new)
-// router.post('/:userId/vehicle', vehicleController.create)
-// router.get('/:userId/vehicle/:vehicleId/edit', vehicleController.edit)
-// router.put('/:userId/vehicle/:vehicleId', vehicleController.update)
-// router.delete('/:userId/vehicle/:vehicleId', vehicleController.delete)
+// Vehicle routes
+// router.get('/:vehicleId/vehicle/:vehicleId', vehicleController.show)
+// router.get('/:vehicleId/vehicle/new', vehicleController.new)
+// router.post('/:vehicleId/vehicle', vehicleController.create)
+// router.get('/:vehicleId/vehicle/:vehicleId/edit', vehicleController.edit)
+// router.put('/:vehicleId/vehicle/:vehicleId', vehicleController.update)
+// router.delete('/:vehicleId/vehicle/:vehicleId', vehicleController.delete)
 
-//
 
-module.exports = router;
+
+module.exports = router
