@@ -25,7 +25,7 @@ const Customer = require("../models/Customer.js");
 const michael = new Customer({
   name: "Michael Smith",
   email: "michaelsmith@gmail.com",
-  phone: 678-757-8888,
+  phone: 6787578888,
   imgLink: "./zoom1.jpg",
   // vehicleList: [toyota]
 });
@@ -33,7 +33,7 @@ const michael = new Customer({
 const alexander = new Customer({
   name: "Alexander Allen",
   email: "alexander@gmail.com",
-  phone: 404-333-3333,
+  phone: 4043333333,
   imgLink: "./zoom2.jpg",
   // vehicleList: [padThai]
 });
@@ -41,7 +41,7 @@ const alexander = new Customer({
 const james = new Customer({
   name: "James Connor",
   email: "jamesoconner@gmail.com",
-  phone: 404-555-5555,
+  phone: 4045555555,
   imgLink: "./zoom3.jpg",
   // vehicleList: [fishTaco]
 });
@@ -49,7 +49,7 @@ const james = new Customer({
 const chris = new Customer({
   name: "Chris Henrick",
   email: "chenrick@gmail.com",
-  phone: 678-000-8889,
+  phone: 6780008889,
   imgLink: "./zoom4.jpg",
   // foodItems: [injera]
 });
