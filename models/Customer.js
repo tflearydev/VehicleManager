@@ -1,10 +1,10 @@
 const mongoose = require('../db/connection.js')
 const Schema = mongoose.Schema
 
-// const VehicleSchema = new Schema({
-//     name: String,
-//     price: String
-// })
+const VehicleSchema = new Schema({
+    name: String,
+    price: String
+})
 
 
 const Customer = new Schema({
@@ -12,7 +12,7 @@ const Customer = new Schema({
     email: String,
     phone: Number,
     imgLink: String,
-    // vehicleList: [],
+    vehicleList: [VehicleSchema],
 })
 
 module.exports = mongoose.model('Customer', Customer)
