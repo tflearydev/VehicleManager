@@ -1,17 +1,17 @@
-// const shopController = require
+// const customerController = require
 const express = require('express')
 const router = express.Router()
 const customerController = require('../controllers/customerController.js')
 // const vehicleController = require('../controllers/vehicleController.js')
 
-// Shop routes
+// Customer routes
 router.get('/', customerController.index)
 router.get('/new', customerController.new)
 router.post('/', customerController.create)
-router.get('/:customerId', customerController.show)
-router.get('/:customerId/edit', customerController.edit)
-router.put('/:customerId', customerController.update)
-router.delete('/:customerId', customerController.delete)
+router.get('/:shopId', customerController.show)
+router.get('/:shopId/edit', customerController.edit)
+router.put('/:shopId', customerController.update)
+router.delete('/:shopId', customerController.delete)
 
 // Vehicle routes
 // router.get('/:vehicleId/vehicle/:vehicleId', vehicleController.show)

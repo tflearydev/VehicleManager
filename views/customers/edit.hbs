@@ -8,23 +8,23 @@
         <input class="form-control" type="text" name="name" value="{{customer.name}}">
       </div>
       <div class="form-group">
-        <label for="rating">Rating</label>
-        <input class="form-control" type="number" name="rating" id="rating" value={{customer.rating}}>
+        <label for="rating">Email</label>
+        <input class="form-control" type="number" name="rating" id="rating" value={{customer.email}}>
       </div>
       <div class="form-group">
         <label for="imgLink">Image</label>
         <input class="form-control" type="text" name="imgLink" id="imgLink" value="{{customer.imgLink}}">
       </div>
       <div class="form-group">
-        <label for="description">Description</label>
+        <label for="description">Phone</label>
         <textarea class="form-control" name="description">
-          {{customer.description}}
+          {{customer.phone}}
         </textarea>
       </div>
-      <div class="form-group">
+      {{!-- <div class="form-group">
         <label for="category">Category</label>
         <input class="form-control" type="text" name="category" value="{{customer.category}}">
-      </div>
+      </div> --}}
       <input class="btn btn-info" type="submit" value="UPDATE">
     </form>
   </div>
