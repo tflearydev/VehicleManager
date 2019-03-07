@@ -22,25 +22,6 @@ const Customer = require("../models/Customer.js");
 //   color: "Pearl White"
 // });
 ///////
-// const lambo = new Vehicle({
-//   name: "2019 Lamborghini Urus",
-//   year: "5.99"
-// });
-
-// const injera = new Food({
-//   name: "Injera",
-//   price: "1.00"
-// });
-
-// const fishTaco = new Food({
-//   name: "Fish Taco",
-//   price: "2.85"
-// });
-
-// const padThai = new Food({
-//   name: "Pad Thai",
-//   price: "9.00"
-// });
 
 const michael = new Customer({
   name: "Michael Smith",
