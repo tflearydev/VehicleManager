@@ -10,6 +10,7 @@ const Schema = mongoose.Schema
 const Customer = new Schema({
     name: String,
     email: String,
+    phone: Number,
     imgLink: String,
     // vehicleList: [],
 })

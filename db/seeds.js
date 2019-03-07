@@ -25,32 +25,32 @@ const Customer = require("../models/Customer.js");
 const michael = new Customer({
   name: "Michael Smith",
   email: "michaelsmith@gmail.com",
-  imgLink:
-    "./zoom1.jpg",
+  phone: 678-757-8888,
+  imgLink: "./zoom1.jpg",
   // vehicleList: [toyota]
 });
 
 const alexander = new Customer({
   name: "Alexander Allen",
   email: "alexander@gmail.com",
-  imgLink:
-    "./zoom2.jpg",
+  phone: 404-333-3333,
+  imgLink: "./zoom2.jpg",
   // vehicleList: [padThai]
 });
 
 const james = new Customer({
   name: "James Connor",
   email: "jamesoconner@gmail.com",
-  imgLink:
-    "./zoom3.jpg",
+  phone: 404-555-5555,
+  imgLink: "./zoom3.jpg",
   // vehicleList: [fishTaco]
 });
 
 const chris = new Customer({
   name: "Chris Henrick",
   email: "chenrick@gmail.com",
-  imgLink:
-    "./zoom4.jpg",
+  phone: 678-000-8889,
+  imgLink: "./zoom4.jpg",
   // foodItems: [injera]
 });
 
