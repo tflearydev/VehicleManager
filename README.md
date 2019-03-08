@@ -27,7 +27,7 @@ ____
 ## ERD :
 ___
 
-<img src='pics/image6.jpg' alt='home' height=450 width=450/>
+<img src='pics/image6.jpeg' alt='home' height=450 width=450/>
 
 ## Deployed Project Link & Trello Board
 ___
