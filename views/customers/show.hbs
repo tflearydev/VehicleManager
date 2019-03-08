@@ -1,15 +1,17 @@
+<div class="card">
+    <div class="card-body">
 <div class="container">
     <h2 class="text-center">{{customer.name}}</h2>
-    <div class="text-center">
-        <img class="customer-img-banner" src={{customer.imgLink}} alt="">
-    </div>
     <div class="text-center">
         <a class="action-btn btn btn-info" href="/{{customer.id}}/edit">EDIT</a>
         <form class="delete-form"action="/{{customer.id}}?_method=DELETE" method="POST">
             <input class="action-btn btn btn-danger" type="submit" value="DELETE">
         </form>
     </div>
-    <p>{{customer.description}}</p>
+    <div class="text-center">
+        <img class="customer-img-banner" src={{customer.imgLink}} alt="">
+    </div>
+    
 
 <div>
     <h3 class="text-center">
@@ -21,7 +23,7 @@
         {{/each}}
     </ul>
     </div>
-    {{!-- as i edit, want to add "services" to customer page instead of shops}}
+    {{!-- as I continue to edit and update, want to add "services" to customer page instead of shops}}
     {{!-- <div>
         <h3 class="text-center" href="/shop">Shops</h3>
     <ul class="text-center">
@@ -31,4 +33,6 @@
     </ul> --}}
     </div>
     </div>
+</div>
+</div>
 </div>
