@@ -1,21 +1,24 @@
-{{!-- <div class="container">
-    <h2 class="text-center">{{vehicle.name}}</h2>
-    <div class="text-center">
-        <img class="customer-img-banner" src={{vehicle.name}} alt="">
-    </div>
-    <div class="text-center">
-        <a class="action-btn btn btn-info" href="/{{vehicle.id}}/edit">EDIT</a>
+<div class="card card-center" style="width: 30vw">
+  <div class="card-body">
+    <h5 class="card-title">{{vehicle.name}}</h5>
+    <p class="card-text">Name and Year: {{vehicle.name}}</p>
+    <p class="card-text">Color: {{vehicle.color}}</p>
+    {{!-- <p class="card-text">State: {{shop.address.state}}</p>
+    <p class="card-text">Zip: {{shop.address.zipCode}}</p>
+    <p class="text-left">Phone Number: {{shop.phoneNumber}}</p> --}}
+    {{!-- <ul class="shop-list">
+      {{#each shop.vehicles}}
+      <li class="vehicle-list-item"><a href="/vehicles/{{id}}">{{name}}</a></li>
+      {{/each}}
+    </ul> --}}
+  </div>
+</div>
+
+
+
+<div class="text-center">
+        {{!-- <a class="action-btn btn btn-info" href="/{{customer.id}}/edit">EDIT</a> --}}
         <form class="delete-form"action="/{{vehicle.id}}?_method=DELETE" method="POST">
             <input class="action-btn btn btn-danger" type="submit" value="DELETE">
         </form>
     </div>
-    <p>{{customer.description}}</p>
-
-    <h3 class="text-center">Vehicles</h3>
-    {{!-- <ul>
-        {{#each customer.serviceList}}
-            {{name}} - {{color}}
-        {{/each}}
-    </ul> --}}
-    {{!-- </div>
-</div> --}}

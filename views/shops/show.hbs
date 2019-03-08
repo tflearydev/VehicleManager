@@ -1,3 +1,4 @@
+
 <div class="card card-center" style="width: 30vw">
   <div class="card-body">
     <h5 class="card-title">{{shop.name}}</h5>
@@ -6,11 +7,21 @@
     <p class="card-text">State: {{shop.address.state}}</p>
     <p class="card-text">Zip: {{shop.address.zipCode}}</p>
     <p class="text-left">Phone Number: {{shop.phoneNumber}}</p>
-    <h5 class="text-left foster-title">Current Fosters:</h5>
     {{!-- <ul class="shop-list">
-      {{#each shop.animals}}
-      <li class="foster-list-item"><a href="/fosters/{{id}}">{{name}}</a></li>
+      {{#each shop.vehicles}}
+      <li class="vehicle-list-item"><a href="/vehicles/{{id}}">{{name}}</a></li>
       {{/each}}
     </ul> --}}
   </div>
 </div>
+
+
+
+<div class="text-center">
+        {{!-- <a class="action-btn btn btn-info" href="/{{customer.id}}/edit">EDIT</a> --}}
+        <form class="delete-form"action="/{{shop.id}}?_method=DELETE" method="POST">
+            <input class="action-btn btn btn-danger" type="submit" value="DELETE">
+        </form>
+    </div>
+
+  

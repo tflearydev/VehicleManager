@@ -18,13 +18,34 @@ const ez = new Shop({
 const tire = new Shop({
   name: "Tire King",
   address: {
-    street: '555 Ponce de Leon Ave',
+    street: '400 Ponce de Leon Ave',
     city: 'Atlanta',
     state: 'GA',
-    zipCode: '30318'
+    zipCode: '30316'
   },
   phoneNumber: '404-543-6788'
 })
+
+const mclaren = new Vehicle({
+  name: "2016 Mclaren 570s",
+  color: "Candy Apple Red"
+})
+
+const aston = new Vehicle({
+  name: "2016 Aston Martin DB9",
+  color: "Gun Metal Gray"
+})
+
+const audi = new Vehicle({
+  name: "2014 Audi A5 Coupe",
+  color: "Pearl White"
+})
+
+const lambo = new Vehicle({
+  name: "2019 Lamborghini Urus",
+  color: "Forest Green"
+})
+
 ////
 const michael = new Customer({
   name: "Michael Smith",
@@ -64,25 +85,8 @@ const chris = new Customer({
 
 
 ////
-const lambo = new Vehicle({
-  name: "2019 Lamborghini Urus",
-  color: "Forest Green"
-});
 
-const mclaren = new Vehicle({
-  name: "2016 Mclaren 570s",
-  color: "Candy Apple Red"
-});
 
-const aston = new Vehicle({
-  name: "2016 Aston Martin DB9",
-  color: "Gun Metal Gray"
-});
-
-const audi = new Vehicle({
-  name: "2014 Audi A5 Coupe",
-  color: "Pearl White"
-});
 ///////
 
 
