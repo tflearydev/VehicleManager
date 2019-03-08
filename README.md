@@ -46,6 +46,7 @@ ___
 
 ### Soon To Come
 
+* Passport login
 * Admin can create, edit, update, and delete a customer's services
 * Admin can search for shops based on the user's current location(needs to be added), even if they are not currently showing up on the site
 * Admin can add multiple vehicle pictures 
