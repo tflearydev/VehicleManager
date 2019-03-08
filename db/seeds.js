@@ -4,6 +4,26 @@ const Customer = require("../models/Customer.js");
 const Vehicle = require("../models/Vehicle.js");
 
 
+const mclaren = new Vehicle({
+  name: "2016 Mclaren 570s",
+  color: "Candy Apple Red"
+})
+
+const aston = new Vehicle({
+  name: "2016 Aston Martin DB9",
+  color: "Gun Metal Gray"
+})
+
+const audi = new Vehicle({
+  name: "2014 Audi A5 Coupe",
+  color: "Pearl White"
+})
+
+const lambo = new Vehicle({
+  name: "2019 Lamborghini Urus",
+  color: "Forest Green"
+})
+
 const ez = new Shop({
   name: "EZ Auto Repair",
   address: {
@@ -26,25 +46,6 @@ const tire = new Shop({
   phoneNumber: '404-543-6788'
 })
 
-const mclaren = new Vehicle({
-  name: "2016 Mclaren 570s",
-  color: "Candy Apple Red"
-})
-
-const aston = new Vehicle({
-  name: "2016 Aston Martin DB9",
-  color: "Gun Metal Gray"
-})
-
-const audi = new Vehicle({
-  name: "2014 Audi A5 Coupe",
-  color: "Pearl White"
-})
-
-const lambo = new Vehicle({
-  name: "2019 Lamborghini Urus",
-  color: "Forest Green"
-})
 
 ////
 const michael = new Customer({
