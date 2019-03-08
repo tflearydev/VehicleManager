@@ -12,22 +12,22 @@ ____
 ## Wireframes :
 ____
 
-<img src='pics/image1.jpg' alt='home' height=300 width=300/>
+<img src='pics/image1.jpg' alt='home' height=450 width=450/>
 
 
-<img src='pics/image2.jpg' alt='home' height=300 width=300/>
+<img src='pics/image2.jpg' alt='home' height=450 width=450/>
 
 
-<img src='pics/image3.jpg' alt='home' height=300 width=300/>
+<img src='pics/image3.jpg' alt='home' height=450 width=450/>
 
 
-<img src='pics/image4.jpg' alt='home' height=300 width=300/>
+<img src='pics/image4.jpg' alt='home' height=450 width=450/>
 
 
 ## ERD :
 ___
 
-<img src='pics/image5.jpg' alt='home' height=300 width=300/>
+<img src='pics/image6.jpg' alt='home' height=450 width=450/>
 
 ## Deployed Project Link & Trello Board
 ___
