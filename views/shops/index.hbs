@@ -1,6 +1,15 @@
 <h1 class="text-center">Shops List</h1>
 
+
+<div class="panel-footer row text-center justify-content-center">
+  <div class="col-xs-6 text-center">
+    <a href="/shop/new" class="action-btn btn btn-primary butn-leg button">Create a New Shop</a>
+  </div>
+</div>
+
 {{#each shops}}
+<div class="card">
+    <div class="card-body">
 <div class="container shops">
   <h2 class="text-left"><a href="/shop/{{id}}">{{name}}</a></h2>
   <p class="text-left">Street: {{address.street}}</p>
@@ -9,13 +18,12 @@
   <p class="text-left">Zip: {{address.zipCode}}</p>
   <p class="text-left">Phone Number: {{phoneNumber}}</p>
 </div>
+</div>
+</div>
 {{/each}}
 
-<div class="panel-footer row text-center justify-content-center">
-  <div class="col-xs-6 text-center">
-    <a href="/shop/new" class="action-btn btn btn-primary butn-leg button">Create a New Shop</a>
-  </div>
-</div>
+
+
 
 
 

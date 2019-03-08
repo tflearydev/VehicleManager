@@ -84,12 +84,7 @@ const chris = new Customer({
   // serviceList: [alignment]
 });
 
-
 ////
-
-
-///////
-
 
 
 

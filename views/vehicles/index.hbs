@@ -1,16 +1,21 @@
 
 <h1 class="text-center">Vehicles List</h1>
 
-{{#each vehicles}}
-<div class="container vehicles">
-  <h2 class="text-left"><a href="/vehicle/{{id}}">{{name}}</a></h2>
-  <p class="text-left">Name: {{name}}</p>
-  <p class="text-left">Color: {{color}}</p>
-</div>
-{{/each}}
-
 <div class="panel-footer row text-center justify-content-center">
   <div class="col-xs-6 text-center">
     <a href="/vehicle/new" class="action-btn btn btn-primary butn-leg button">Create a New Vehicle</a>
   </div>
 </div>
+
+{{#each vehicles}}
+<div class="card">
+    <div class="card-body">
+<div class="container vehicles">
+  <h2 class="text-left"><a href="/vehicle/{{id}}">{{name}}</a></h2>
+  <p class="text-left">Name: {{name}}</p>
+  <p class="text-left">Color: {{color}}</p>
+</div>
+</div>
+</div>
+{{/each}}
+
