@@ -1,3 +1,4 @@
+// ALL COMMENTS BELOW ARE MY CODE AND WILL BE USED FOR MY UPDATES
 const Vehicle = require('../models/Vehicle')
 
 const vehicleController = {
@@ -18,7 +19,7 @@ const vehicleController = {
             res.render('vehicles/show', {vehicle})
         })
     },
-    // edit and update currently disabled 
+    // edit and update currently disabled, will add with updates
     // edit: (req, res) => {
     //     Vehicle.findById(req.params.vehicleId).then((vehicle) => {
     //         res.render('vehicles/edit', {vehicle})

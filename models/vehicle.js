@@ -1,4 +1,3 @@
-// require db/connection as 'mongoose' and pull schema
 const mongoose = require('../db/connection.js')
 const Schema = mongoose.Schema
 

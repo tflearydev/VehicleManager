@@ -1,3 +1,5 @@
+// ALL COMMENTS BELOW ARE MY CODE AND WILL BE USED FOR MY UPDATES, PREPPING
+
 const Shop = require('../models/Shop')
 
 const shopController = {
@@ -18,7 +20,7 @@ const shopController = {
             res.render('shops/show', {shop})
         })
     },
-    // edit and update currently disabled 
+    // edit and update currently disabled, will add with updated features
     // edit: (req, res) => {
     //     Shop.findById(req.params.shopId).then((shop) => {
     //         res.render('shops/edit', {shop})
