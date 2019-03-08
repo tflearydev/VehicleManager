@@ -12,32 +12,28 @@ ____
 ## Wireframes :
 ____
 
-### Home, List + Add Customer/s
-<img src='pics/...jpg' alt='home' height=300 width=300/>
+<img src='pics/image1.jpg' alt='home' height=300 width=300/>
 
-### Edit, Delete Customer
-<img src='pics/...jpg' alt='home' height=300 width=300/>
 
-### Vehicles
-<img src='pics/...jpg' alt='home' height=300 width=300/>
+<img src='pics/image2.jpg' alt='home' height=300 width=300/>
 
-### Shops
-<img src='pics/...jpg' alt='home' height=300 width=300/>
 
-### Add Vehicle or Shop
+<img src='pics/image3.jpg' alt='home' height=300 width=300/>
 
-### Shop/ Vehicle Card + Delete
-<img src='pics/...jpg' alt='home' height=300 width=300/>
+
+<img src='pics/image4.jpg' alt='home' height=300 width=300/>
+
 
 ## ERD :
 ___
-<img src='pics/...jpg' alt='home' height=300 width=300/>
+
+<img src='pics/image5.jpg' alt='home' height=300 width=300/>
 
 ## Deployed Project Link & Trello Board
 ___
-[Heroku]()
+[Heroku](https://blooming-dusk-93153.herokuapp.com/)
 
-[Trello]()
+[Trello](https://trello.com/b/dgw8H06d/autopocket-vehicle-manager)
 
 ## Features
 ___
