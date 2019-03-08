@@ -1,21 +1,39 @@
+const Vehicle = require('../models/Vehicle')
+
 const vehicleController = {
-    show: (req, res) => {
-        res.send(`Showing vehicle with id of ${req.params.vehicleId}`)
+    index: (req, res) => {
+        Vehicle.find()
+        .then(vehicles => {
+            res.render('vehicles/index', {vehicles})
+        })
     },
     new: (req, res) => {
-        res.send(`Show a form to create a new vehicle`)
+        res.render('vehicles/new')
     },
     create: (req, res) => {
-        res.send('Create the new vehicle in the db')
+        res.send('Create a new vehicle in the db')
     },
-    edit: (req, res) => {
-        res.send(`Show an edit form for the vehicle with id of ${req.params.vehicleId}`)
+    show: (req, res) => {
+        Vehicle.findById(req.params.vehicleId).then((vehicle) => {
+            res.render('vehicles/show', {vehicle})
+        })
     },
-    update: (req, res) => {
-        res.send(`Update the vehicle with id of ${req.params.vehicleId}`)
-    },
+    // edit and update currently disabled 
+    // edit: (req, res) => {
+    //     Vehicle.findById(req.params.vehicleId).then((vehicle) => {
+    //         res.render('vehicles/edit', {vehicle})
+    //     })
+    // },
+    // update: (req, res) => {
+    //     Vehicle.findByIdAndUpdate(req.params.vehicleId, req.body, {new: true}).then((updatedVehicle) => {
+    //         res.redirect(`/${req.params.vehicleId}`)
+    //     })
+    // },
     delete: (req, res) => {
-        res.send(`Delete vehicle with the id of ${req.params.vehicleId}`)
+        Vehicle.findByIdAndDelete(req.params.vehicleId).then(() => {
+            console.log(`Donut with id of ${req.params.vehicleId}`)
+            res.redirect('/')
+        })
     }
 }
 

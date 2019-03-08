@@ -3,16 +3,16 @@ const Schema = mongoose.Schema
 
 const VehicleSchema = new Schema({
     name: String,
-    price: String
+    color: String
 })
 
 
 const CustomerSchema = new Schema({
     name: String,
     email: String,
-    phone: Number,
+    phone: String,
     imgLink: String,
-    vehicleList: [VehicleSchema],
+    vehicleList: [VehicleSchema]
 })
 
 module.exports = mongoose.model('Customer', CustomerSchema)
