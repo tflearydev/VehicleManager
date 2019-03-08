@@ -7,7 +7,7 @@ const VehicleSchema = new Schema({
 })
 
 
-const Customer = new Schema({
+const CustomerSchema = new Schema({
     name: String,
     email: String,
     phone: Number,
@@ -15,4 +15,4 @@ const Customer = new Schema({
     vehicleList: [VehicleSchema],
 })
 
-module.exports = mongoose.model('Customer', Customer)
+module.exports = mongoose.model('Customer', CustomerSchema)
