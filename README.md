@@ -1,4 +1,4 @@
-# Autmotive Vehicle Manager - Admin
+# Automotive Vehicle Manager - Admin
 
 This application is for the Administration of an automotive service business. In particular, it allows businesses to add, view, and edit their customers, vehicles, as well as to keep up with the shops that they deal with on a daily basis. *New Features Soon*
 
