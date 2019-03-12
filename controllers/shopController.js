@@ -13,7 +13,9 @@ const shopController = {
         res.render('shops/new')
     },
     create: (req, res) => {
-        res.send('Create a new shop in the db')
+        Shop.create(req.body).then(shop => {
+            res.redirect('/shop')
+        })
     },
     show: (req, res) => {
         Shop.findById(req.params.shopId).then((shop) => {
@@ -33,8 +35,8 @@ const shopController = {
     // },
     delete: (req, res) => {
         Shop.findByIdAndDelete(req.params.shopId).then(() => {
-            console.log(`Donut with id of ${req.params.shopId}`)
-            res.redirect('/')
+            console.log(`shop with id of ${req.params.shopId}`)
+            res.redirect('/shop')
         })
     }
 }

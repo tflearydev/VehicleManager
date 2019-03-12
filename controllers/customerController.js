@@ -11,7 +11,9 @@ const customerController = {
         res.render('customers/new')
     },
     create: (req, res) => {
-        res.send('Create a new customer in the db')
+        Customer.create(req.body).then(customer => {
+            res.redirect('/')
+        })
     },
     show: (req, res) => {
         Customer.findById(req.params.customerId).then((customer) => {

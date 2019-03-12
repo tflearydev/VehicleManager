@@ -12,7 +12,9 @@ const vehicleController = {
         res.render('vehicles/new')
     },
     create: (req, res) => {
-        res.send('Create a new vehicle in the db')
+        Vehicle.create(req.body).then(vehicle => {
+            res.redirect('/vehicle')
+        })
     },
     show: (req, res) => {
         Vehicle.findById(req.params.vehicleId).then((vehicle) => {
@@ -32,8 +34,8 @@ const vehicleController = {
     // },
     delete: (req, res) => {
         Vehicle.findByIdAndDelete(req.params.vehicleId).then(() => {
-            console.log(`Donut with id of ${req.params.vehicleId}`)
-            res.redirect('/')
+            console.log(`deleted vehicle with id of ${req.params.vehicleId}`)
+            res.redirect('/vehicle')
         })
     }
 }
