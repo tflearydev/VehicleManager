@@ -4,9 +4,9 @@ const Vehicle = require('../models/Vehicle')
 const vehicleController = {
     index: (req, res) => {
         Vehicle.find()
-        .then(vehicles => {
-            res.render('vehicles/index', {vehicles})
-        })
+            .then(vehicles => {
+                res.render('vehicles/index', { vehicles })
+            })
     },
     new: (req, res) => {
         res.render('vehicles/new')
@@ -16,7 +16,7 @@ const vehicleController = {
     },
     show: (req, res) => {
         Vehicle.findById(req.params.vehicleId).then((vehicle) => {
-            res.render('vehicles/show', {vehicle})
+            res.render('vehicles/show', { vehicle })
         })
     },
     // edit and update currently disabled, will add with updates

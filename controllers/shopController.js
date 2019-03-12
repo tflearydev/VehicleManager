@@ -5,9 +5,9 @@ const Shop = require('../models/Shop')
 const shopController = {
     index: (req, res) => {
         Shop.find()
-        .then(shops => {
-            res.render('shops/index', {shops})
-        })
+            .then(shops => {
+                res.render('shops/index', { shops })
+            })
     },
     new: (req, res) => {
         res.render('shops/new')
@@ -17,7 +17,7 @@ const shopController = {
     },
     show: (req, res) => {
         Shop.findById(req.params.shopId).then((shop) => {
-            res.render('shops/show', {shop})
+            res.render('shops/show', { shop })
         })
     },
     // edit and update currently disabled, will add with updated features
