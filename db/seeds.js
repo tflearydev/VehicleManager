@@ -3,7 +3,6 @@ const Shop = require("../models/shop.js")
 const Customer = require("../models/customer.js");
 const Vehicle = require("../models/vehicle.js");
 
-
 const mclaren = new Vehicle({
   name: "2016 Mclaren 570s",
   color: "Candy Apple Red"
