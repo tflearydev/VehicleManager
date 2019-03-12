@@ -26,7 +26,7 @@ router.get('/shop/new', shopController.new)
 router.post('/shop', shopController.create)
 router.get('/shop/:shopId', shopController.show)
 // router.get('/:vehicleId/vehicle/:vehicleId/edit', vehicleController.edit)
-// router.put('/vehicle/:vehicleId', shopController.update)
+// router.put('/shop/:shopId', shopController.update)
 router.delete('/shop/:shopId', shopController.delete)
 
 
