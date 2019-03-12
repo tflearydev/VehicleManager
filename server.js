@@ -25,7 +25,7 @@ app.use(express.static(__dirname + '/public'))
 // Set up route middleware
 app.use('/', routes)
 
-// Set up to listen to PORT 3001
+// Set up to listen to PORT 3002
 const PORT = process.env.PORT || 3002
 
 app.listen(PORT, () => {

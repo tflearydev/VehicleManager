@@ -29,6 +29,7 @@ router.get('/shop/:shopId', shopController.show)
 // router.put('/vehicle/:vehicleId', shopController.update)
 router.delete('/shop/:shopId', shopController.delete)
 
+
 // Customer routes
 router.get('/', customerController.index)
 router.get('/new', customerController.new)

@@ -30,7 +30,7 @@ const customerController = {
     },
     delete: (req, res) => {
         Customer.findByIdAndDelete(req.params.customerId).then(() => {
-            console.log(`Donut with id of ${req.params.customerId}`)
+            console.log(`Customer with id of ${req.params.customerId}`)
             res.redirect('/')
         })
     }
