@@ -1,5 +1,5 @@
 const mongoose = require("./connection.js");
-const Shop = require("../models/Shop.js")
+const Shop = require("../models/shop.js")
 const Customer = require("../models/Customer.js");
 const Vehicle = require("../models/Vehicle.js");
 
