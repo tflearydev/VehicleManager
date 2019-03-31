@@ -1,8 +1,6 @@
 const mongoose = require('../db/connection.js')
 const Schema = mongoose.Schema
 
-
-
 const ShopSchema = new Schema({
     name: String,
     address: {

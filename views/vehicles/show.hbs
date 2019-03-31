@@ -1,4 +1,3 @@
-{{!-- CODE COMMENTED OUT BELOW WILL BE USED FOR UPDATES/ PREPPING --}}
 <div class="card card-center" style="width: 30vw">
   <div class="card-body">
     <h5 class="card-title">{{vehicle.name}}</h5>
@@ -8,7 +7,6 @@
 </div>
 
 <div class="text-center">
-        {{!-- <a class="action-btn btn btn-info" href="/{{customer.id}}/edit">EDIT</a> --}}
         <form class="delete-form"action="/{{vehicle.id}}?_method=DELETE" method="POST">
             <input class="action-btn btn btn-danger" type="submit" value="DELETE">
         </form>
