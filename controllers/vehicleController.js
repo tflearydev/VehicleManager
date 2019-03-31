@@ -1,4 +1,4 @@
-// ALL COMMENTS BELOW ARE MY CODE AND WILL BE USED FOR MY UPDATES
+// ALL COMMENTS BELOW WILL BE USED FOR MY UPDATES- prepping
 const Vehicle = require('../models/Vehicle')
 
 const vehicleController = {

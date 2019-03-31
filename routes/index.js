@@ -1,4 +1,4 @@
-//ALL COMMENTS BELOW ARE MY CODE EDITED OUT AND WILL BE USED FOR UPDATES
+//ALL COMMENTS BELOW WILL BE USED FOR UPDATES- prepping
 
 // const customerController = require
 const express = require('express')
@@ -8,7 +8,7 @@ const vehicleController = require('../controllers/vehicleController')
 const shopController = require('../controllers/shopController')
 
 
-// routes commented out directly below were created to be used in next updates as my controllers show as well
+// routes commented out directly below were created to be used in next updates
 // router.get('/', appController.index)
 
 
