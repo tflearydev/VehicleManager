@@ -23,16 +23,16 @@ const shopController = {
         })
     },
     // edit and update currently disabled, will add with updated features
-    // edit: (req, res) => {
-    //     Shop.findById(req.params.shopId).then((shop) => {
-    //         res.render('shops/edit', {shop})
-    //     })
-    // },
-    // update: (req, res) => {
-    //     Shop.findByIdAndUpdate(req.params.shopId, req.body, {new: true}).then((updatedShop) => {
-    //         res.redirect(`/${req.params.shopId}`)
-    //     })
-    // },
+    edit: (req, res) => {
+        Shop.findById(req.params.shopId).then((shop) => {
+            res.render('shops/edit', {shop})
+        })
+    },
+    update: (req, res) => {
+        Shop.findByIdAndUpdate(req.params.shopId, req.body, {new: true}).then((updatedShop) => {
+            res.redirect(`/${req.params.shopId}`)
+        })
+    },
     delete: (req, res) => {
         Shop.findByIdAndDelete(req.params.shopId).then(() => {
             console.log(`shop with id of ${req.params.shopId}`)
