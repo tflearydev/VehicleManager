@@ -29,7 +29,7 @@ ___
 
 <img src='pics/image6.jpeg' alt='home' height=450 width=450/>
 
-## Deployed Project Link & Trello Board(Planning)
+## Deployed Project Link & Trello Board(User Stories)
 ___
 [Heroku](https://admin-vehicle-manager.herokuapp.com/)
 
