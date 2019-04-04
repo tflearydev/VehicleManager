@@ -5,8 +5,8 @@ This application is for the Administration of an automotive service business. In
 ## Technologies Used:
 ____
 * Visual Studio Code
-* Mongo, Express, Handlebars, Node.js (MEHN Stack)
-* Javascript, HTML, CSS (Languages)
+* MongoDB, Express, Handlebars, Node.js 
+* Javascript, HTML, CSS 
 * Bootstrap, CSS, Google Fonts (Styling)
 
 ## Wireframes :
